@@ -403,7 +403,9 @@ class WebcontentConverter {
         } catch (e) {
         } finally {
           await windowBrowserPage!.close();
+          await windowBrower!.close();
           windowBrowserPage = null;
+
         }
       } else {
         //mobile method
