@@ -378,6 +378,7 @@ class WebcontentConverter {
           /// await windowBrowserPage.emulate(pp.puppeteer.devices.laptopWithMDPIScreen);
           ///
           await windowBrowserPage.setContent(content,
+              timeout: Duration(seconds: 0),
               wait: pp.Until.all([
                 pp.Until.load,
                 pp.Until.domContentLoaded,
